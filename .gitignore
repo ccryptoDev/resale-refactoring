@@ -3,3 +3,6 @@ cache
 artifacts
 .env
 package-lock.json
+deploy
+deployments
+Factory.js
