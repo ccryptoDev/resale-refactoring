@@ -16,7 +16,11 @@ module.exports = async ({accounts, getUnnamedAccounts}) => {
 		]
 
 	let deployment = await deploy("Resale_MarketPlace", {
-		args: contractArgs[0].matic,
+		// args: contractArgs,
+		args: [
+      // RAIR Treasury address FOR MATIC
+      '0x3fD4268B03cce553f180E77dfC14fde00271F9B7',
+    ],
 		from: deployerAddress,
 		waitConfirmations: 6
 	});
