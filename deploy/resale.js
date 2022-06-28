@@ -16,7 +16,7 @@ module.exports = async ({accounts, getUnnamedAccounts}) => {
 		]
 
 	let deployment = await deploy("Resale_MarketPlace", {
-		args: contractArgs,
+		args: contractArgs[0].matic,
 		from: deployerAddress,
 		waitConfirmations: 6
 	});
