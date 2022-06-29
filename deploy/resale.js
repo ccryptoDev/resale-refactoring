@@ -17,12 +17,9 @@ module.exports = async ({accounts, getUnnamedAccounts}) => {
 
 	let deployment = await deploy("Resale_MarketPlace", {
 		// args: contractArgs,
-		args: [
-      // RAIR Treasury address FOR MATIC
-      '0x3fD4268B03cce553f180E77dfC14fde00271F9B7',
-    ],
+		args: ['0x3fD4268B03cce553f180E77dfC14fde00271F9B7'],
 		from: deployerAddress,
-		waitConfirmations: 6
+		// waitConfirmations: 6
 	});
 	console.log(`Resale Marketplace deployed at ${deployment.receipt.contractAddress}`);
 	if (deployment.newlyDeployed) {
