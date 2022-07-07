@@ -3,7 +3,7 @@ node_modules/
 
 # compile & cache
 cache
-artifacts
+# artifacts
 
 # env files
 .env
