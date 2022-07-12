@@ -111,6 +111,7 @@ describe("Token Factory", function () {
 		describe('Users', () => {
 			it ("Roles should be set up", async () => {
 				await expect(await factoryInstance.hasRole(await factoryInstance.OWNER(), owner.address)).to.equal(true);
+				console.log("owner address--: ", owner.address);
 				await expect(await factoryInstance.hasRole(await factoryInstance.ERC777(), erc777instance.address)).to.equal(true);
 				await expect(await factoryInstance.getRoleAdmin(await factoryInstance.ERC777())).to.equal(await factoryInstance.OWNER());
 				await expect(await factoryInstance.getRoleAdmin(await factoryInstance.OWNER())).to.equal(await factoryInstance.OWNER());
